@@ -62,7 +62,14 @@
   img:hover {
     margin-top: 2px;
   }
-
+  .hover_effect {
+    height: 25%;
+    width: auto;
+  }
+  .hover_effect:hover {
+    height: 100%;
+    width: auto;
+  }
   .subtitle {
     color: white;
     font-size: 2rem;
@@ -72,18 +79,40 @@
     animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 2s) forwards;
   }
   
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 4px;
-    justify-content: space-evenly;
+  .wrapper {
+    width: 80%;
+    margin: 40px auto;
   }
-  
+  div.gallery {
+    margin-top: 30px;
+  }
+  div.gallery ul {
+    list-style-type: none;
+    margin-left: 35px;
+  }
+  div.gallery ul li, div.gallery li img {
+    width: 100%;
+    transition: all 0.1 ease-in-out;
+  }
+  div.gallery ul li {
+    position: relative;
+    float: left;
+    width: 300px;
+	  height: 300px;
+	  margin: 15px;
+    margin-bottom: 150px;
+	  padding: 5px;
+	  z-index: 0;
+  }
+  div.gallery ul li:hover{
+    z-index: 5;
+  }
+
   /* Create four equal columns that sits next to each other */
   .column {
     flex: 25%;
     max-width: 25%;
-    padding: 0 2px;
+    padding: 0;
   }
 
   .gallery_img {
