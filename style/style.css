@@ -6,9 +6,7 @@
 }
 
 body {
-  margin: 60px;
   font-family: "Source Sans Pro", sans-serif;
-  min-height: 100vh;
   place-content: start center;
   text-align: center;
   background: var(--bg-color);
@@ -57,7 +55,6 @@ h1::after {
 .button {
   display:inline-block;
   align-items:center;
-  border-radius: 4px;
   background-color: #0059fd;
   border: none;
   color: #FFFFFF;
