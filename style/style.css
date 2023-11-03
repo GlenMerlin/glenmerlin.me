@@ -7,18 +7,17 @@
 
 body {
   font-family: "Source Sans Pro", sans-serif;
-  place-content: start center;
   text-align: center;
   background: var(--bg-color);
 }
 
 .header {
-  top: 50%;
-  right: 50%;
-  bottom: 50%;
-  left: 50%;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
   display: grid;
-  place-content: start center;
+  place-content: center;
   text-align: center;
 }
 
@@ -93,8 +92,8 @@ h1::after {
 }
 
 img {
-  filter: drop-shadow(0.25rem 0.25rem 0.5rem #000000);
-  float: left;
+  filter: drop-shadow(0.5rem 0.5rem 0.5rem #000000);
+  float: center;
   margin: 15px;
   transition: margin 0.3s ease-out;
 }
@@ -123,7 +122,7 @@ img:hover {
 }
 
 .wrapper {
-  width: 80%;
+  width: 100%;
   margin: 40px auto;
 }
 
@@ -214,4 +213,8 @@ div.gallery ul li:hover {
 #link:hover,
 #link:focus {
   color: #007acc;
+}
+.image {
+  display: flex;
+  justify-content: center;
 }
