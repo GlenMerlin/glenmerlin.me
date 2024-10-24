@@ -2,7 +2,7 @@
   --bg-color: #1e1e1e;
   --typewriterSpeed: 2s;
   --typewriterCharacters: 24;
-  color: white
+  color: white;
 }
 
 body {
@@ -52,11 +52,11 @@ h1::after {
 }
 
 .button {
-  display:inline-block;
-  align-items:center;
+  display: inline-block;
+  align-items: center;
   background-color: #0059fd;
   border: none;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
   font-size: 24px;
   padding: 20px;
@@ -74,7 +74,7 @@ h1::after {
 }
 
 .button span:after {
-  content: '\2192';
+  content: "\2192";
   position: absolute;
   opacity: 0;
   top: 0;
