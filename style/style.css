@@ -12,13 +12,13 @@ body {
 }
 
 .header {
-  top: auto;
-  right: auto;
-  bottom: auto;
-  left: auto;
-  display: grid;
-  place-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   text-align: center;
+  padding: 20px;
 }
 
 h1 {
@@ -119,6 +119,7 @@ img:hover {
   opacity: 0;
   transform: translateY(3rem);
   animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 2s) forwards;
+  padding: 20px;
 }
 
 .wrapper {
